@@ -10,7 +10,7 @@
 		537E490B18A68E8400126CAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537E490A18A68E8400126CAD /* Foundation.framework */; };
 		537E490E18A68E8400126CAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 537E490D18A68E8400126CAD /* main.m */; };
 		537E491C18A6901100126CAD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537E491B18A6901100126CAD /* Security.framework */; };
-		53EA78C118A8481C003C0944 /* securetransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EA78C018A8481C003C0944 /* securetransport.m */; };
+		5398C3F018BA50DB001753CF /* securetransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5398C3EF18BA50DB001753CF /* securetransport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5300123D18B135B6000A9C9C /* crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = ../../../Projects/Source/libssh2/src/crypto.h; sourceTree = "<group>"; };
 		5300123E18B138C9000A9C9C /* plain_pkcs8_rsa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = plain_pkcs8_rsa.der; sourceTree = "<group>"; };
 		5300123F18B138C9000A9C9C /* plain_pkcs8_rsa.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = plain_pkcs8_rsa.pem; sourceTree = "<group>"; };
 		5300124018B138C9000A9C9C /* enc_pkcs1_rsa.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = enc_pkcs1_rsa.pem; sourceTree = "<group>"; };
@@ -37,12 +36,13 @@
 		537E490A18A68E8400126CAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		537E490D18A68E8400126CAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		537E491018A68E8400126CAD /* libssh2 secure transport-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libssh2 secure transport-Prefix.pch"; sourceTree = "<group>"; };
-		537E491918A68FFE00126CAD /* securetransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = securetransport.h; path = ../../../Projects/Source/libssh2/src/securetransport.h; sourceTree = "<group>"; };
 		537E491B18A6901100126CAD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		537E491D18A6903000126CAD /* libssh2_publickey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libssh2_publickey.h; path = ../../../Projects/Source/libssh2/include/libssh2_publickey.h; sourceTree = "<group>"; };
-		537E491E18A6903000126CAD /* libssh2_sftp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libssh2_sftp.h; path = ../../../Projects/Source/libssh2/include/libssh2_sftp.h; sourceTree = "<group>"; };
-		537E491F18A6903000126CAD /* libssh2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libssh2.h; path = ../../../Projects/Source/libssh2/include/libssh2.h; sourceTree = "<group>"; };
-		53EA78C018A8481C003C0944 /* securetransport.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; name = securetransport.m; path = ../../../Projects/Source/libssh2/src/securetransport.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		5398C3EA18BA50CB001753CF /* libssh2_publickey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libssh2_publickey.h; path = External/libssh2/include/libssh2_publickey.h; sourceTree = SOURCE_ROOT; };
+		5398C3EB18BA50CB001753CF /* libssh2_sftp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libssh2_sftp.h; path = External/libssh2/include/libssh2_sftp.h; sourceTree = SOURCE_ROOT; };
+		5398C3EC18BA50CB001753CF /* libssh2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libssh2.h; path = External/libssh2/include/libssh2.h; sourceTree = SOURCE_ROOT; };
+		5398C3ED18BA50D5001753CF /* crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = External/libssh2/src/crypto.h; sourceTree = SOURCE_ROOT; };
+		5398C3EE18BA50DB001753CF /* securetransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = securetransport.h; path = External/libssh2/src/securetransport.h; sourceTree = SOURCE_ROOT; };
+		5398C3EF18BA50DB001753CF /* securetransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = securetransport.m; path = External/libssh2/src/securetransport.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +88,12 @@
 			isa = PBXGroup;
 			children = (
 				537E490D18A68E8400126CAD /* main.m */,
-				537E491D18A6903000126CAD /* libssh2_publickey.h */,
-				537E491E18A6903000126CAD /* libssh2_sftp.h */,
-				537E491F18A6903000126CAD /* libssh2.h */,
-				5300123D18B135B6000A9C9C /* crypto.h */,
-				537E491918A68FFE00126CAD /* securetransport.h */,
-				53EA78C018A8481C003C0944 /* securetransport.m */,
+				5398C3EA18BA50CB001753CF /* libssh2_publickey.h */,
+				5398C3EB18BA50CB001753CF /* libssh2_sftp.h */,
+				5398C3EC18BA50CB001753CF /* libssh2.h */,
+				5398C3ED18BA50D5001753CF /* crypto.h */,
+				5398C3EE18BA50DB001753CF /* securetransport.h */,
+				5398C3EF18BA50DB001753CF /* securetransport.m */,
 				537E490F18A68E8400126CAD /* Supporting Files */,
 			);
 			path = "libssh2 secure transport";
@@ -164,7 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53EA78C118A8481C003C0944 /* securetransport.m in Sources */,
+				5398C3F018BA50DB001753CF /* securetransport.m in Sources */,
 				537E490E18A68E8400126CAD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

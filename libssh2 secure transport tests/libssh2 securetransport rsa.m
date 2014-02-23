@@ -48,10 +48,10 @@ static NSData *SHA1(NSData *data) {
 	libssh2_crypto_exit();
 }
 
-- (void)testRSASignAndVerify
+- (void)_testRSASignAndVerifyWithKey:(NSURL *)keyLocation passphrase:(NSString *)passphrase
 {
 	libssh2_rsa_ctx *rsa = NULL;
-	int rsaError = _libssh2_rsa_new_private(&rsa, NULL, [[NSBundle bundleForClass:self.class] pathForResource:@"plain_pkcs1_rsa" ofType:@"pem"].fileSystemRepresentation, NULL);
+	int rsaError = _libssh2_rsa_new_private(&rsa, NULL, keyLocation.fileSystemRepresentation, (unsigned char const *)passphrase.UTF8String);
 	XCTAssertEqual(rsaError, 0, @"_libssh2_rsa_new_private should return 0");
 
 	NSData *data = RandomData();
@@ -69,6 +69,11 @@ static NSData *SHA1(NSData *data) {
 
 	rsaError = _libssh2_rsa_free(rsa);
 	XCTAssertEqual(rsaError, 0, @"_libssh2_rsa_free should return 0");
+}
+
+- (void)testRSAPlainPKCS1
+{
+	[self _testRSASignAndVerifyWithKey:[[NSBundle bundleForClass:self.class] URLForResource:@"plain_pkcs1_rsa" withExtension:@"pem"] passphrase:nil];
 }
 
 @end

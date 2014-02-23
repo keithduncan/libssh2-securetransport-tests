@@ -1,0 +1,289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		537E490B18A68E8400126CAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537E490A18A68E8400126CAD /* Foundation.framework */; };
+		537E490E18A68E8400126CAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 537E490D18A68E8400126CAD /* main.m */; };
+		537E491218A68E8400126CAD /* libssh2_secure_transport.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537E491118A68E8400126CAD /* libssh2_secure_transport.1 */; };
+		537E491C18A6901100126CAD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537E491B18A6901100126CAD /* Security.framework */; };
+		53EA78C118A8481C003C0944 /* securetransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EA78C018A8481C003C0944 /* securetransport.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		537E490518A68E8400126CAD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				537E491218A68E8400126CAD /* libssh2_secure_transport.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5300123D18B135B6000A9C9C /* crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = ../../../Projects/Source/libssh2/src/crypto.h; sourceTree = "<group>"; };
+		5300123E18B138C9000A9C9C /* plain_pkcs8_rsa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = plain_pkcs8_rsa.der; sourceTree = "<group>"; };
+		5300123F18B138C9000A9C9C /* plain_pkcs8_rsa.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = plain_pkcs8_rsa.pem; sourceTree = "<group>"; };
+		5300124018B138C9000A9C9C /* enc_pkcs1_rsa.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = enc_pkcs1_rsa.pem; sourceTree = "<group>"; };
+		5300124118B138C9000A9C9C /* enc_pkcs8_rsa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = enc_pkcs8_rsa.der; sourceTree = "<group>"; };
+		5300124218B138C9000A9C9C /* enc_pkcs8_rsa.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = enc_pkcs8_rsa.pem; sourceTree = "<group>"; };
+		5300124318B138C9000A9C9C /* plain_pkcs1_rsa.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = plain_pkcs1_rsa.pem; sourceTree = "<group>"; };
+		537E490718A68E8400126CAD /* libssh2 secure transport */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "libssh2 secure transport"; sourceTree = BUILT_PRODUCTS_DIR; };
+		537E490A18A68E8400126CAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		537E490D18A68E8400126CAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		537E491018A68E8400126CAD /* libssh2 secure transport-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libssh2 secure transport-Prefix.pch"; sourceTree = "<group>"; };
+		537E491118A68E8400126CAD /* libssh2_secure_transport.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = libssh2_secure_transport.1; sourceTree = "<group>"; };
+		537E491918A68FFE00126CAD /* securetransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = securetransport.h; path = ../../../Projects/Source/libssh2/src/securetransport.h; sourceTree = "<group>"; };
+		537E491B18A6901100126CAD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		537E491D18A6903000126CAD /* libssh2_publickey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libssh2_publickey.h; path = ../../../Projects/Source/libssh2/include/libssh2_publickey.h; sourceTree = "<group>"; };
+		537E491E18A6903000126CAD /* libssh2_sftp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libssh2_sftp.h; path = ../../../Projects/Source/libssh2/include/libssh2_sftp.h; sourceTree = "<group>"; };
+		537E491F18A6903000126CAD /* libssh2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libssh2.h; path = ../../../Projects/Source/libssh2/include/libssh2.h; sourceTree = "<group>"; };
+		53EA78C018A8481C003C0944 /* securetransport.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; name = securetransport.m; path = ../../../Projects/Source/libssh2/src/securetransport.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		537E490418A68E8400126CAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537E491C18A6901100126CAD /* Security.framework in Frameworks */,
+				537E490B18A68E8400126CAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		537E48FE18A68E8400126CAD = {
+			isa = PBXGroup;
+			children = (
+				537E490C18A68E8400126CAD /* libssh2 secure transport */,
+				537E490918A68E8400126CAD /* Frameworks */,
+				537E490818A68E8400126CAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		537E490818A68E8400126CAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				537E490718A68E8400126CAD /* libssh2 secure transport */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		537E490918A68E8400126CAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				537E491B18A6901100126CAD /* Security.framework */,
+				537E490A18A68E8400126CAD /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		537E490C18A68E8400126CAD /* libssh2 secure transport */ = {
+			isa = PBXGroup;
+			children = (
+				537E490D18A68E8400126CAD /* main.m */,
+				537E491118A68E8400126CAD /* libssh2_secure_transport.1 */,
+				537E491D18A6903000126CAD /* libssh2_publickey.h */,
+				537E491E18A6903000126CAD /* libssh2_sftp.h */,
+				537E491F18A6903000126CAD /* libssh2.h */,
+				5300123D18B135B6000A9C9C /* crypto.h */,
+				537E491918A68FFE00126CAD /* securetransport.h */,
+				53EA78C018A8481C003C0944 /* securetransport.m */,
+				537E490F18A68E8400126CAD /* Supporting Files */,
+			);
+			path = "libssh2 secure transport";
+			sourceTree = "<group>";
+		};
+		537E490F18A68E8400126CAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				537E491018A68E8400126CAD /* libssh2 secure transport-Prefix.pch */,
+				5300124318B138C9000A9C9C /* plain_pkcs1_rsa.pem */,
+				5300123F18B138C9000A9C9C /* plain_pkcs8_rsa.pem */,
+				5300123E18B138C9000A9C9C /* plain_pkcs8_rsa.der */,
+				5300124018B138C9000A9C9C /* enc_pkcs1_rsa.pem */,
+				5300124218B138C9000A9C9C /* enc_pkcs8_rsa.pem */,
+				5300124118B138C9000A9C9C /* enc_pkcs8_rsa.der */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		537E490618A68E8400126CAD /* libssh2 secure transport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 537E491518A68E8400126CAD /* Build configuration list for PBXNativeTarget "libssh2 secure transport" */;
+			buildPhases = (
+				537E490318A68E8400126CAD /* Sources */,
+				537E490418A68E8400126CAD /* Frameworks */,
+				537E490518A68E8400126CAD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libssh2 secure transport";
+			productName = "libssh2 secure transport";
+			productReference = 537E490718A68E8400126CAD /* libssh2 secure transport */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		537E48FF18A68E8400126CAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Keith Duncan";
+			};
+			buildConfigurationList = 537E490218A68E8400126CAD /* Build configuration list for PBXProject "libssh2 secure transport" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 537E48FE18A68E8400126CAD;
+			productRefGroup = 537E490818A68E8400126CAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				537E490618A68E8400126CAD /* libssh2 secure transport */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		537E490318A68E8400126CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53EA78C118A8481C003C0944 /* securetransport.m in Sources */,
+				537E490E18A68E8400126CAD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		537E491318A68E8400126CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		537E491418A68E8400126CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		537E491618A68E8400126CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libssh2 secure transport/libssh2 secure transport-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		537E491718A68E8400126CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libssh2 secure transport/libssh2 secure transport-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		537E490218A68E8400126CAD /* Build configuration list for PBXProject "libssh2 secure transport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537E491318A68E8400126CAD /* Debug */,
+				537E491418A68E8400126CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		537E491518A68E8400126CAD /* Build configuration list for PBXNativeTarget "libssh2 secure transport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537E491618A68E8400126CAD /* Debug */,
+				537E491718A68E8400126CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 537E48FF18A68E8400126CAD /* Project object */;
+}

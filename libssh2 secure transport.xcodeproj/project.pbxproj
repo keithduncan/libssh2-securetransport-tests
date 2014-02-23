@@ -7,51 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		537E490B18A68E8400126CAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537E490A18A68E8400126CAD /* Foundation.framework */; };
-		537E490E18A68E8400126CAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 537E490D18A68E8400126CAD /* main.m */; };
-		537E491C18A6901100126CAD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537E491B18A6901100126CAD /* Security.framework */; };
-		5398C3F018BA50DB001753CF /* securetransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5398C3EF18BA50DB001753CF /* securetransport.m */; };
+		5398C3F718BA5143001753CF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5398C3F618BA5143001753CF /* XCTest.framework */; };
+		5398C3FD18BA5143001753CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5398C3FB18BA5143001753CF /* InfoPlist.strings */; };
+		5398C40B18BA5189001753CF /* enc_pkcs1_rsa.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5398C40518BA5189001753CF /* enc_pkcs1_rsa.pem */; };
+		5398C40C18BA5189001753CF /* enc_pkcs8_rsa.der in Resources */ = {isa = PBXBuildFile; fileRef = 5398C40618BA5189001753CF /* enc_pkcs8_rsa.der */; };
+		5398C40D18BA5189001753CF /* enc_pkcs8_rsa.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5398C40718BA5189001753CF /* enc_pkcs8_rsa.pem */; };
+		5398C40E18BA5189001753CF /* plain_pkcs1_rsa.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5398C40818BA5189001753CF /* plain_pkcs1_rsa.pem */; };
+		5398C40F18BA5189001753CF /* plain_pkcs8_rsa.der in Resources */ = {isa = PBXBuildFile; fileRef = 5398C40918BA5189001753CF /* plain_pkcs8_rsa.der */; };
+		5398C41018BA5189001753CF /* plain_pkcs8_rsa.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5398C40A18BA5189001753CF /* plain_pkcs8_rsa.pem */; };
+		5398C41218BA51B3001753CF /* libssh2 securetransport rsa.m in Sources */ = {isa = PBXBuildFile; fileRef = 5398C41118BA51B3001753CF /* libssh2 securetransport rsa.m */; };
+		5398C41618BA5488001753CF /* securetransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5398C3EF18BA50DB001753CF /* securetransport.m */; };
+		5398C41718BA5491001753CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537E491B18A6901100126CAD /* Security.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		537E490518A68E8400126CAD /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		5300123E18B138C9000A9C9C /* plain_pkcs8_rsa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = plain_pkcs8_rsa.der; sourceTree = "<group>"; };
-		5300123F18B138C9000A9C9C /* plain_pkcs8_rsa.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = plain_pkcs8_rsa.pem; sourceTree = "<group>"; };
-		5300124018B138C9000A9C9C /* enc_pkcs1_rsa.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = enc_pkcs1_rsa.pem; sourceTree = "<group>"; };
-		5300124118B138C9000A9C9C /* enc_pkcs8_rsa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = enc_pkcs8_rsa.der; sourceTree = "<group>"; };
-		5300124218B138C9000A9C9C /* enc_pkcs8_rsa.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = enc_pkcs8_rsa.pem; sourceTree = "<group>"; };
-		5300124318B138C9000A9C9C /* plain_pkcs1_rsa.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = plain_pkcs1_rsa.pem; sourceTree = "<group>"; };
-		537E490718A68E8400126CAD /* libssh2 secure transport */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "libssh2 secure transport"; sourceTree = BUILT_PRODUCTS_DIR; };
 		537E490A18A68E8400126CAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		537E490D18A68E8400126CAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		537E491018A68E8400126CAD /* libssh2 secure transport-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libssh2 secure transport-Prefix.pch"; sourceTree = "<group>"; };
 		537E491B18A6901100126CAD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5398C3EA18BA50CB001753CF /* libssh2_publickey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libssh2_publickey.h; path = External/libssh2/include/libssh2_publickey.h; sourceTree = SOURCE_ROOT; };
 		5398C3EB18BA50CB001753CF /* libssh2_sftp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libssh2_sftp.h; path = External/libssh2/include/libssh2_sftp.h; sourceTree = SOURCE_ROOT; };
 		5398C3EC18BA50CB001753CF /* libssh2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libssh2.h; path = External/libssh2/include/libssh2.h; sourceTree = SOURCE_ROOT; };
 		5398C3ED18BA50D5001753CF /* crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = External/libssh2/src/crypto.h; sourceTree = SOURCE_ROOT; };
 		5398C3EE18BA50DB001753CF /* securetransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = securetransport.h; path = External/libssh2/src/securetransport.h; sourceTree = SOURCE_ROOT; };
-		5398C3EF18BA50DB001753CF /* securetransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = securetransport.m; path = External/libssh2/src/securetransport.m; sourceTree = SOURCE_ROOT; };
+		5398C3EF18BA50DB001753CF /* securetransport.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; name = securetransport.m; path = External/libssh2/src/securetransport.m; sourceTree = SOURCE_ROOT; tabWidth = 2; usesTabs = 0; };
+		5398C3F518BA5143001753CF /* libssh2 secure transport tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "libssh2 secure transport tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5398C3F618BA5143001753CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5398C3FA18BA5143001753CF /* libssh2 secure transport tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libssh2 secure transport tests-Info.plist"; sourceTree = "<group>"; };
+		5398C3FC18BA5143001753CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5398C40518BA5189001753CF /* enc_pkcs1_rsa.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = enc_pkcs1_rsa.pem; sourceTree = "<group>"; };
+		5398C40618BA5189001753CF /* enc_pkcs8_rsa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = enc_pkcs8_rsa.der; sourceTree = "<group>"; };
+		5398C40718BA5189001753CF /* enc_pkcs8_rsa.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = enc_pkcs8_rsa.pem; sourceTree = "<group>"; };
+		5398C40818BA5189001753CF /* plain_pkcs1_rsa.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plain_pkcs1_rsa.pem; sourceTree = "<group>"; };
+		5398C40918BA5189001753CF /* plain_pkcs8_rsa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = plain_pkcs8_rsa.der; sourceTree = "<group>"; };
+		5398C40A18BA5189001753CF /* plain_pkcs8_rsa.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plain_pkcs8_rsa.pem; sourceTree = "<group>"; };
+		5398C41118BA51B3001753CF /* libssh2 securetransport rsa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "libssh2 securetransport rsa.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		537E490418A68E8400126CAD /* Frameworks */ = {
+		5398C3F218BA5143001753CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				537E491C18A6901100126CAD /* Security.framework in Frameworks */,
-				537E490B18A68E8400126CAD /* Foundation.framework in Frameworks */,
+				5398C41718BA5491001753CF /* Security.framework in Frameworks */,
+				5398C3F718BA5143001753CF /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +58,7 @@
 		537E48FE18A68E8400126CAD = {
 			isa = PBXGroup;
 			children = (
-				537E490C18A68E8400126CAD /* libssh2 secure transport */,
+				5398C3F818BA5143001753CF /* libssh2 secure transport tests */,
 				537E490918A68E8400126CAD /* Frameworks */,
 				537E490818A68E8400126CAD /* Products */,
 			);
@@ -70,7 +67,7 @@
 		537E490818A68E8400126CAD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				537E490718A68E8400126CAD /* libssh2 secure transport */,
+				5398C3F518BA5143001753CF /* libssh2 secure transport tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,58 +77,85 @@
 			children = (
 				537E491B18A6901100126CAD /* Security.framework */,
 				537E490A18A68E8400126CAD /* Foundation.framework */,
+				5398C3F618BA5143001753CF /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		537E490C18A68E8400126CAD /* libssh2 secure transport */ = {
+		5398C3F818BA5143001753CF /* libssh2 secure transport tests */ = {
 			isa = PBXGroup;
 			children = (
-				537E490D18A68E8400126CAD /* main.m */,
+				5398C41318BA51BA001753CF /* Source */,
+				5398C41418BA51C5001753CF /* Tests */,
+				5398C40418BA5177001753CF /* Keys */,
+				5398C3F918BA5143001753CF /* Supporting Files */,
+			);
+			path = "libssh2 secure transport tests";
+			sourceTree = "<group>";
+		};
+		5398C3F918BA5143001753CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5398C3FA18BA5143001753CF /* libssh2 secure transport tests-Info.plist */,
+				5398C3FB18BA5143001753CF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5398C40418BA5177001753CF /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				5398C40518BA5189001753CF /* enc_pkcs1_rsa.pem */,
+				5398C40618BA5189001753CF /* enc_pkcs8_rsa.der */,
+				5398C40718BA5189001753CF /* enc_pkcs8_rsa.pem */,
+				5398C40818BA5189001753CF /* plain_pkcs1_rsa.pem */,
+				5398C40918BA5189001753CF /* plain_pkcs8_rsa.der */,
+				5398C40A18BA5189001753CF /* plain_pkcs8_rsa.pem */,
+			);
+			name = Keys;
+			sourceTree = "<group>";
+		};
+		5398C41318BA51BA001753CF /* Source */ = {
+			isa = PBXGroup;
+			children = (
 				5398C3EA18BA50CB001753CF /* libssh2_publickey.h */,
 				5398C3EB18BA50CB001753CF /* libssh2_sftp.h */,
 				5398C3EC18BA50CB001753CF /* libssh2.h */,
 				5398C3ED18BA50D5001753CF /* crypto.h */,
 				5398C3EE18BA50DB001753CF /* securetransport.h */,
 				5398C3EF18BA50DB001753CF /* securetransport.m */,
-				537E490F18A68E8400126CAD /* Supporting Files */,
 			);
-			path = "libssh2 secure transport";
+			name = Source;
 			sourceTree = "<group>";
 		};
-		537E490F18A68E8400126CAD /* Supporting Files */ = {
+		5398C41418BA51C5001753CF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				537E491018A68E8400126CAD /* libssh2 secure transport-Prefix.pch */,
-				5300124318B138C9000A9C9C /* plain_pkcs1_rsa.pem */,
-				5300123F18B138C9000A9C9C /* plain_pkcs8_rsa.pem */,
-				5300123E18B138C9000A9C9C /* plain_pkcs8_rsa.der */,
-				5300124018B138C9000A9C9C /* enc_pkcs1_rsa.pem */,
-				5300124218B138C9000A9C9C /* enc_pkcs8_rsa.pem */,
-				5300124118B138C9000A9C9C /* enc_pkcs8_rsa.der */,
+				5398C41118BA51B3001753CF /* libssh2 securetransport rsa.m */,
 			);
-			name = "Supporting Files";
+			name = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		537E490618A68E8400126CAD /* libssh2 secure transport */ = {
+		5398C3F418BA5143001753CF /* libssh2 secure transport tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 537E491518A68E8400126CAD /* Build configuration list for PBXNativeTarget "libssh2 secure transport" */;
+			buildConfigurationList = 5398C40118BA5143001753CF /* Build configuration list for PBXNativeTarget "libssh2 secure transport tests" */;
 			buildPhases = (
-				537E490318A68E8400126CAD /* Sources */,
-				537E490418A68E8400126CAD /* Frameworks */,
-				537E490518A68E8400126CAD /* CopyFiles */,
+				5398C41518BA53A2001753CF /* Build libssh2 */,
+				5398C3F118BA5143001753CF /* Sources */,
+				5398C3F218BA5143001753CF /* Frameworks */,
+				5398C3F318BA5143001753CF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "libssh2 secure transport";
-			productName = "libssh2 secure transport";
-			productReference = 537E490718A68E8400126CAD /* libssh2 secure transport */;
-			productType = "com.apple.product-type.tool";
+			name = "libssh2 secure transport tests";
+			productName = "libssh2 secure transport tests";
+			productReference = 5398C3F518BA5143001753CF /* libssh2 secure transport tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -154,22 +178,67 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				537E490618A68E8400126CAD /* libssh2 secure transport */,
+				5398C3F418BA5143001753CF /* libssh2 secure transport tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		5398C3F318BA5143001753CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5398C40D18BA5189001753CF /* enc_pkcs8_rsa.pem in Resources */,
+				5398C3FD18BA5143001753CF /* InfoPlist.strings in Resources */,
+				5398C40E18BA5189001753CF /* plain_pkcs1_rsa.pem in Resources */,
+				5398C40B18BA5189001753CF /* enc_pkcs1_rsa.pem in Resources */,
+				5398C40C18BA5189001753CF /* enc_pkcs8_rsa.der in Resources */,
+				5398C40F18BA5189001753CF /* plain_pkcs8_rsa.der in Resources */,
+				5398C41018BA5189001753CF /* plain_pkcs8_rsa.pem in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5398C41518BA53A2001753CF /* Build libssh2 */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build libssh2";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd External/libssh2\n\nif [ ! -f .configure ]\nthen\n    ./buildconf\n    ./configure --without-openssl --with-securetransport\nfi\n\nmake";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		537E490318A68E8400126CAD /* Sources */ = {
+		5398C3F118BA5143001753CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5398C3F018BA50DB001753CF /* securetransport.m in Sources */,
-				537E490E18A68E8400126CAD /* main.m in Sources */,
+				5398C41618BA5488001753CF /* securetransport.m in Sources */,
+				5398C41218BA51B3001753CF /* libssh2 securetransport rsa.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5398C3FB18BA5143001753CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5398C3FC18BA5143001753CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		537E491318A68E8400126CAD /* Debug */ = {
@@ -240,21 +309,33 @@
 			};
 			name = Release;
 		};
-		537E491618A68E8400126CAD /* Debug */ = {
+		5398C40218BA5143001753CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "libssh2 secure transport/libssh2 secure transport-Prefix.pch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "libssh2 secure transport tests/libssh2 secure transport tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
-		537E491718A68E8400126CAD /* Release */ = {
+		5398C40318BA5143001753CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "libssh2 secure transport/libssh2 secure transport-Prefix.pch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "libssh2 secure transport tests/libssh2 secure transport tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -270,14 +351,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		537E491518A68E8400126CAD /* Build configuration list for PBXNativeTarget "libssh2 secure transport" */ = {
+		5398C40118BA5143001753CF /* Build configuration list for PBXNativeTarget "libssh2 secure transport tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				537E491618A68E8400126CAD /* Debug */,
-				537E491718A68E8400126CAD /* Release */,
+				5398C40218BA5143001753CF /* Debug */,
+				5398C40318BA5143001753CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -86,6 +86,11 @@ static NSData *SHA1(NSData *data) {
 	[self _testRSASignAndVerifyWithKey:[[NSBundle bundleForClass:self.class] URLForResource:@"plain_pkcs1_rsa" withExtension:@"pem"] passphrase:nil];
 }
 
+- (void)testRSAPlainPKCS8_PEM
+{
+	[self _testRSASignAndVerifyWithKey:[[NSBundle bundleForClass:self.class] URLForResource:@"plain_pkcs8_rsa" withExtension:@"pem"] passphrase:nil];
+}
+
 - (void)testRSAPlainPKCS8_DER
 {
 	[self _testRSASignAndVerifyWithKey:[[NSBundle bundleForClass:self.class] URLForResource:@"plain_pkcs8_rsa" withExtension:@"der"] passphrase:nil];

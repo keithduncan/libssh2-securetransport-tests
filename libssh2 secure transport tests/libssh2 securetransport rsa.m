@@ -48,8 +48,10 @@ static NSData *SHA1(NSData *data) {
 	libssh2_crypto_exit();
 }
 
-- (void)_testRSASignAndVerifyWithKey:(NSURL *)keyLocation passphrase:(NSString *)passphrase
+- (void)_testRSASignAndVerifyWithKey:(NSString *)keyName passphrase:(NSString *)passphrase
 {
+	NSURL *keyLocation = [[NSBundle bundleForClass:self.class] URLForResource:keyName withExtension:nil];
+
 	libssh2_rsa_ctx *rsa = NULL;
 	int rsaError = _libssh2_rsa_new_private(&rsa, NULL, keyLocation.fileSystemRepresentation, (unsigned char const *)passphrase.UTF8String);
 	XCTAssertEqual(rsaError, 0, @"_libssh2_rsa_new_private should return 0");
@@ -83,17 +85,17 @@ static NSData *SHA1(NSData *data) {
 
 - (void)test_PEM_PKCS1_Plain
 {
-	[self _testRSASignAndVerifyWithKey:[[NSBundle bundleForClass:self.class] URLForResource:@"plain_pkcs1_rsa" withExtension:@"pem"] passphrase:nil];
+	[self _testRSASignAndVerifyWithKey:@"plain_pkcs1_rsa.pem" passphrase:nil];
 }
 
 - (void)test_PEM_PKCS8_Plain
 {
-	[self _testRSASignAndVerifyWithKey:[[NSBundle bundleForClass:self.class] URLForResource:@"plain_pkcs8_rsa" withExtension:@"pem"] passphrase:nil];
+	[self _testRSASignAndVerifyWithKey:@"plain_pkcs8_rsa.pem" passphrase:nil];
 }
 
 - (void)test_DER_PKCS8_Plain
 {
-	[self _testRSASignAndVerifyWithKey:[[NSBundle bundleForClass:self.class] URLForResource:@"plain_pkcs8_rsa" withExtension:@"der"] passphrase:nil];
+	[self _testRSASignAndVerifyWithKey:@"plain_pkcs8_rsa.der" passphrase:nil];
 }
 
 @end

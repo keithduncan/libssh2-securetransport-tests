@@ -81,17 +81,17 @@ static NSData *SHA1(NSData *data) {
 	XCTAssertEqual(rsaError, 0, @"_libssh2_rsa_free should return 0");
 }
 
-- (void)testRSAPlainPKCS1
+- (void)test_PEM_PKCS1_Plain
 {
 	[self _testRSASignAndVerifyWithKey:[[NSBundle bundleForClass:self.class] URLForResource:@"plain_pkcs1_rsa" withExtension:@"pem"] passphrase:nil];
 }
 
-- (void)testRSAPlainPKCS8_PEM
+- (void)test_PEM_PKCS8_Plain
 {
 	[self _testRSASignAndVerifyWithKey:[[NSBundle bundleForClass:self.class] URLForResource:@"plain_pkcs8_rsa" withExtension:@"pem"] passphrase:nil];
 }
 
-- (void)testRSAPlainPKCS8_DER
+- (void)test_DER_PKCS8_Plain
 {
 	[self _testRSASignAndVerifyWithKey:[[NSBundle bundleForClass:self.class] URLForResource:@"plain_pkcs8_rsa" withExtension:@"der"] passphrase:nil];
 }

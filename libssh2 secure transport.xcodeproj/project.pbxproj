@@ -106,11 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				5398C40518BA5189001753CF /* enc_pkcs1_rsa.pem */,
-				5398C40618BA5189001753CF /* enc_pkcs8_rsa.der */,
 				5398C40718BA5189001753CF /* enc_pkcs8_rsa.pem */,
+				5398C40618BA5189001753CF /* enc_pkcs8_rsa.der */,
 				5398C40818BA5189001753CF /* plain_pkcs1_rsa.pem */,
-				5398C40918BA5189001753CF /* plain_pkcs8_rsa.der */,
 				5398C40A18BA5189001753CF /* plain_pkcs8_rsa.pem */,
+				5398C40918BA5189001753CF /* plain_pkcs8_rsa.der */,
 			);
 			name = Keys;
 			sourceTree = "<group>";

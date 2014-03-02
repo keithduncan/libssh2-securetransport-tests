@@ -98,6 +98,16 @@ static NSData *SHA1(NSData *data) {
 	[self _testRSASignAndVerifyWithKey:@"plain_pkcs8_rsa.der" passphrase:nil];
 }
 
+- (void)test_PEM_PKCS1_Ciper
+{
+	[self _testRSASignAndVerifyWithKey:@"enc_pkcs1_rsa.pem" passphrase:@"test"];
+}
+
+- (void)test_PEM_PKCS8_Ciper
+{
+	[self _testRSASignAndVerifyWithKey:@"enc_pkcs8_rsa.pem" passphrase:@"test"];
+}
+
 - (void)test_DER_PKCS8_Cipher
 {
 	[self _testRSASignAndVerifyWithKey:@"enc_pkcs8_rsa.der" passphrase:@"test"];

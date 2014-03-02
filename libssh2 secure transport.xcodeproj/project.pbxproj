@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5355ED8318C3ACE900AC2EED /* securetransport.c in Sources */ = {isa = PBXBuildFile; fileRef = 5355ED8218C3ACE900AC2EED /* securetransport.c */; };
 		5398C3F718BA5143001753CF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5398C3F618BA5143001753CF /* XCTest.framework */; };
 		5398C3FD18BA5143001753CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5398C3FB18BA5143001753CF /* InfoPlist.strings */; };
 		5398C40B18BA5189001753CF /* enc_pkcs1_rsa.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5398C40518BA5189001753CF /* enc_pkcs1_rsa.pem */; };
-		5398C40C18BA5189001753CF /* enc_pkcs8_rsa.der in Resources */ = {isa = PBXBuildFile; fileRef = 5398C40618BA5189001753CF /* enc_pkcs8_rsa.der */; };
+		5398C40C18BA5189001753CF /* enc_pkcs8_rsa.p8 in Resources */ = {isa = PBXBuildFile; fileRef = 5398C40618BA5189001753CF /* enc_pkcs8_rsa.p8 */; };
 		5398C40D18BA5189001753CF /* enc_pkcs8_rsa.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5398C40718BA5189001753CF /* enc_pkcs8_rsa.pem */; };
 		5398C40E18BA5189001753CF /* plain_pkcs1_rsa.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5398C40818BA5189001753CF /* plain_pkcs1_rsa.pem */; };
-		5398C40F18BA5189001753CF /* plain_pkcs8_rsa.der in Resources */ = {isa = PBXBuildFile; fileRef = 5398C40918BA5189001753CF /* plain_pkcs8_rsa.der */; };
+		5398C40F18BA5189001753CF /* plain_pkcs8_rsa.p8 in Resources */ = {isa = PBXBuildFile; fileRef = 5398C40918BA5189001753CF /* plain_pkcs8_rsa.p8 */; };
 		5398C41018BA5189001753CF /* plain_pkcs8_rsa.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5398C40A18BA5189001753CF /* plain_pkcs8_rsa.pem */; };
 		5398C41218BA51B3001753CF /* libssh2 securetransport rsa.m in Sources */ = {isa = PBXBuildFile; fileRef = 5398C41118BA51B3001753CF /* libssh2 securetransport rsa.m */; };
-		5398C41618BA5488001753CF /* securetransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5398C3EF18BA50DB001753CF /* securetransport.m */; };
 		5398C41718BA5491001753CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537E491B18A6901100126CAD /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5355ED8218C3ACE900AC2EED /* securetransport.c */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.c; name = securetransport.c; path = External/libssh2/src/securetransport.c; sourceTree = SOURCE_ROOT; tabWidth = 2; usesTabs = 0; };
 		537E490A18A68E8400126CAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		537E491B18A6901100126CAD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5398C3EA18BA50CB001753CF /* libssh2_publickey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libssh2_publickey.h; path = External/libssh2/include/libssh2_publickey.h; sourceTree = SOURCE_ROOT; };
@@ -28,16 +29,15 @@
 		5398C3EC18BA50CB001753CF /* libssh2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libssh2.h; path = External/libssh2/include/libssh2.h; sourceTree = SOURCE_ROOT; };
 		5398C3ED18BA50D5001753CF /* crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = External/libssh2/src/crypto.h; sourceTree = SOURCE_ROOT; };
 		5398C3EE18BA50DB001753CF /* securetransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = securetransport.h; path = External/libssh2/src/securetransport.h; sourceTree = SOURCE_ROOT; };
-		5398C3EF18BA50DB001753CF /* securetransport.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; name = securetransport.m; path = External/libssh2/src/securetransport.m; sourceTree = SOURCE_ROOT; tabWidth = 2; usesTabs = 0; };
 		5398C3F518BA5143001753CF /* libssh2 secure transport tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "libssh2 secure transport tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5398C3F618BA5143001753CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5398C3FA18BA5143001753CF /* libssh2 secure transport tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libssh2 secure transport tests-Info.plist"; sourceTree = "<group>"; };
 		5398C3FC18BA5143001753CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5398C40518BA5189001753CF /* enc_pkcs1_rsa.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = enc_pkcs1_rsa.pem; sourceTree = "<group>"; };
-		5398C40618BA5189001753CF /* enc_pkcs8_rsa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = enc_pkcs8_rsa.der; sourceTree = "<group>"; };
+		5398C40618BA5189001753CF /* enc_pkcs8_rsa.p8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = enc_pkcs8_rsa.p8; sourceTree = "<group>"; };
 		5398C40718BA5189001753CF /* enc_pkcs8_rsa.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = enc_pkcs8_rsa.pem; sourceTree = "<group>"; };
 		5398C40818BA5189001753CF /* plain_pkcs1_rsa.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plain_pkcs1_rsa.pem; sourceTree = "<group>"; };
-		5398C40918BA5189001753CF /* plain_pkcs8_rsa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = plain_pkcs8_rsa.der; sourceTree = "<group>"; };
+		5398C40918BA5189001753CF /* plain_pkcs8_rsa.p8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = plain_pkcs8_rsa.p8; sourceTree = "<group>"; };
 		5398C40A18BA5189001753CF /* plain_pkcs8_rsa.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plain_pkcs8_rsa.pem; sourceTree = "<group>"; };
 		5398C41118BA51B3001753CF /* libssh2 securetransport rsa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "libssh2 securetransport rsa.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,10 +107,10 @@
 			children = (
 				5398C40518BA5189001753CF /* enc_pkcs1_rsa.pem */,
 				5398C40718BA5189001753CF /* enc_pkcs8_rsa.pem */,
-				5398C40618BA5189001753CF /* enc_pkcs8_rsa.der */,
+				5398C40618BA5189001753CF /* enc_pkcs8_rsa.p8 */,
 				5398C40818BA5189001753CF /* plain_pkcs1_rsa.pem */,
 				5398C40A18BA5189001753CF /* plain_pkcs8_rsa.pem */,
-				5398C40918BA5189001753CF /* plain_pkcs8_rsa.der */,
+				5398C40918BA5189001753CF /* plain_pkcs8_rsa.p8 */,
 			);
 			name = Keys;
 			sourceTree = "<group>";
@@ -123,7 +123,7 @@
 				5398C3EC18BA50CB001753CF /* libssh2.h */,
 				5398C3ED18BA50D5001753CF /* crypto.h */,
 				5398C3EE18BA50DB001753CF /* securetransport.h */,
-				5398C3EF18BA50DB001753CF /* securetransport.m */,
+				5355ED8218C3ACE900AC2EED /* securetransport.c */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -192,8 +192,8 @@
 				5398C3FD18BA5143001753CF /* InfoPlist.strings in Resources */,
 				5398C40E18BA5189001753CF /* plain_pkcs1_rsa.pem in Resources */,
 				5398C40B18BA5189001753CF /* enc_pkcs1_rsa.pem in Resources */,
-				5398C40C18BA5189001753CF /* enc_pkcs8_rsa.der in Resources */,
-				5398C40F18BA5189001753CF /* plain_pkcs8_rsa.der in Resources */,
+				5398C40C18BA5189001753CF /* enc_pkcs8_rsa.p8 in Resources */,
+				5398C40F18BA5189001753CF /* plain_pkcs8_rsa.p8 in Resources */,
 				5398C41018BA5189001753CF /* plain_pkcs8_rsa.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,7 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5398C41618BA5488001753CF /* securetransport.m in Sources */,
+				5355ED8318C3ACE900AC2EED /* securetransport.c in Sources */,
 				5398C41218BA51B3001753CF /* libssh2 securetransport rsa.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +358,7 @@
 				5398C40318BA5143001753CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

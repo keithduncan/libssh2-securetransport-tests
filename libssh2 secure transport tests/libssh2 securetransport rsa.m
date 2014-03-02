@@ -83,6 +83,8 @@ static NSData *SHA1(NSData *data) {
 	XCTAssertEqual(rsaError, 0, @"_libssh2_rsa_free should return 0");
 }
 
+#warning test that keys created using _libssh2_rsa_new can be used for sign verify
+
 - (void)test_PEM_PKCS1_Plain
 {
 	[self _testRSASignAndVerifyWithKey:@"plain_pkcs1_rsa.pem" passphrase:nil];
@@ -95,22 +97,22 @@ static NSData *SHA1(NSData *data) {
 
 - (void)test_DER_PKCS8_Plain
 {
-	[self _testRSASignAndVerifyWithKey:@"plain_pkcs8_rsa.der" passphrase:nil];
+	[self _testRSASignAndVerifyWithKey:@"plain_pkcs8_rsa.p8" passphrase:nil];
 }
 
-- (void)test_PEM_PKCS1_Ciper
+- (void)test_PEM_PKCS1_Cipher
 {
 	[self _testRSASignAndVerifyWithKey:@"enc_pkcs1_rsa.pem" passphrase:@"test"];
 }
 
-- (void)test_PEM_PKCS8_Ciper
+- (void)test_PEM_PKCS8_Cipher
 {
 	[self _testRSASignAndVerifyWithKey:@"enc_pkcs8_rsa.pem" passphrase:@"test"];
 }
 
 - (void)test_DER_PKCS8_Cipher
 {
-	[self _testRSASignAndVerifyWithKey:@"enc_pkcs8_rsa.der" passphrase:@"test"];
+	[self _testRSASignAndVerifyWithKey:@"enc_pkcs8_rsa.p8" passphrase:@"test"];
 }
 
 @end

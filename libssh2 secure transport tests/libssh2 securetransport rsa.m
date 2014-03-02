@@ -55,6 +55,7 @@ static NSData *SHA1(NSData *data) {
 	libssh2_rsa_ctx *rsa = NULL;
 	int rsaError = _libssh2_rsa_new_private(&rsa, NULL, keyLocation.fileSystemRepresentation, (unsigned char const *)passphrase.UTF8String);
 	XCTAssertEqual(rsaError, 0, @"_libssh2_rsa_new_private should return 0");
+	if (rsaError != 0) return;
 
 	NSData *data = RandomData(1024);
 	XCTAssertNotNil(data, @"random data should be non nil");
@@ -65,6 +66,7 @@ static NSData *SHA1(NSData *data) {
 	size_t signatureLength = 0;
 	rsaError = _libssh2_rsa_sha1_sign(NULL, rsa, [sha1 bytes], [sha1 length], &signature, &signatureLength);
 	XCTAssertEqual(rsaError, 0, @"_libssh2_rsa_sha1_sign should return 0");
+	if (rsaError != 0) return;
 
 	rsaError = _libssh2_rsa_sha1_verify(rsa, signature, signatureLength, [sha1 bytes], [sha1 length]);
 	XCTAssertEqual(rsaError, 0, @"_libssh2_rsa_sha1_verify should return 0 for a valid signature");

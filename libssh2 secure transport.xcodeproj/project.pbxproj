@@ -18,6 +18,7 @@
 		5398C41018BA5189001753CF /* plain_pkcs8_rsa.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5398C40A18BA5189001753CF /* plain_pkcs8_rsa.pem */; };
 		5398C41218BA51B3001753CF /* libssh2 securetransport rsa.m in Sources */ = {isa = PBXBuildFile; fileRef = 5398C41118BA51B3001753CF /* libssh2 securetransport rsa.m */; };
 		5398C41718BA5491001753CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537E491B18A6901100126CAD /* Security.framework */; };
+		53F0B7DB193BCFE700D602B6 /* libssh2 securetransport dsa.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F0B7DA193BCFE700D602B6 /* libssh2 securetransport dsa.m */; };
 		53F0B814193CCCD200D602B6 /* libssh2test.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F0B813193CCCD200D602B6 /* libssh2test.m */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		5398C40918BA5189001753CF /* plain_pkcs8_rsa.p8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = plain_pkcs8_rsa.p8; sourceTree = "<group>"; };
 		5398C40A18BA5189001753CF /* plain_pkcs8_rsa.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plain_pkcs8_rsa.pem; sourceTree = "<group>"; };
 		5398C41118BA51B3001753CF /* libssh2 securetransport rsa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "libssh2 securetransport rsa.m"; sourceTree = "<group>"; };
+		53F0B7DA193BCFE700D602B6 /* libssh2 securetransport dsa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "libssh2 securetransport dsa.m"; sourceTree = "<group>"; };
 		53F0B813193CCCD200D602B6 /* libssh2test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libssh2test.m; sourceTree = "<group>"; };
 		53F0B815193CCCDF00D602B6 /* libssh2test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libssh2test.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 				53F0B815193CCCDF00D602B6 /* libssh2test.h */,
 				53F0B813193CCCD200D602B6 /* libssh2test.m */,
 				5398C41118BA51B3001753CF /* libssh2 securetransport rsa.m */,
+				53F0B7DA193BCFE700D602B6 /* libssh2 securetransport dsa.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5355ED8318C3ACE900AC2EED /* securetransport.c in Sources */,
+				53F0B7DB193BCFE700D602B6 /* libssh2 securetransport dsa.m in Sources */,
 				5398C41218BA51B3001753CF /* libssh2 securetransport rsa.m in Sources */,
 				53F0B814193CCCD200D602B6 /* libssh2test.m in Sources */,
 			);

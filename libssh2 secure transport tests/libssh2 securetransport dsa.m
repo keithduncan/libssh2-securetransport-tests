@@ -28,7 +28,7 @@
 	NSData *sha1 = [self SHA1:data];
 	XCTAssertNotNil(sha1, @"sha1(random data) should be non nil");
 
-	size_t signatureLength = 0;
+	size_t signatureLength = SHA_DIGEST_LENGTH;
 	unsigned char *signature = malloc(signatureLength);
 	dsaError = _libssh2_dsa_sha1_sign(key, [sha1 bytes], [sha1 length], signature);
 	XCTAssertEqual(dsaError, 0, @"_libssh2_dsa_sha1_sign should return 0");

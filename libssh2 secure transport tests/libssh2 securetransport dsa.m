@@ -51,9 +51,44 @@
 	XCTAssertEqual(dsaError, 0, @"_libssh2_dsa_free should return 0");
 }
 
-- (void)test_PKCS8
+- (void)test_PEM_PKCS1_Plain
 {
-	[self _testDSASignAndVerifyWithKey:@"pkcs8_dsa.p8" passphrase:@"test"];
+	[self _testDSASignAndVerifyWithKey:@"plain_pkcs1_dsa.pem" passphrase:nil];
+}
+
+- (void)test_DER_PKCS1_Plain
+{
+	[self _testDSASignAndVerifyWithKey:@"plain_pkcs1_dsa.der" passphrase:nil];
+}
+
+- (void)test_PEM_PKCS8_Plain
+{
+	[self _testDSASignAndVerifyWithKey:@"plain_pkcs8_dsa.pem" passphrase:nil];
+}
+
+- (void)test_DER_PKCS8_Plain
+{
+	[self _testDSASignAndVerifyWithKey:@"plain_pkcs8_dsa.p8" passphrase:nil];
+}
+
+- (void)test_PEM_PKCS1_Cipher
+{
+	[self _testDSASignAndVerifyWithKey:@"enc_pkcs1_dsa.pem" passphrase:@"test"];
+}
+
+- (void)test_DER_PKCS1_Cipher
+{
+	[self _testDSASignAndVerifyWithKey:@"enc_pkcs1_dsa.der" passphrase:@"test"];
+}
+
+- (void)test_PEM_PKCS8_Cipher
+{
+	[self _testDSASignAndVerifyWithKey:@"enc_pkcs8_dsa.pem" passphrase:@"test"];
+}
+
+- (void)test_DER_PKCS8_Cipher
+{
+	[self _testDSASignAndVerifyWithKey:@"enc_pkcs8_dsa.p8" passphrase:@"test"];
 }
 
 @end

@@ -58,6 +58,11 @@
 	[self _testRSASignAndVerifyWithKey:@"plain_pkcs1_rsa.pem" passphrase:nil];
 }
 
+- (void)test_DER_PKCS1_Plain
+{
+	[self _testRSASignAndVerifyWithKey:@"plain_pkcs1_rsa.der" passphrase:nil];
+}
+
 - (void)test_PEM_PKCS8_Plain
 {
 	[self _testRSASignAndVerifyWithKey:@"plain_pkcs8_rsa.pem" passphrase:nil];
@@ -71,6 +76,11 @@
 - (void)test_PEM_PKCS1_Cipher
 {
 	[self _testRSASignAndVerifyWithKey:@"enc_pkcs1_rsa.pem" passphrase:@"test"];
+}
+
+- (void)test_DER_PKCS1_Cipher
+{
+	[self _testRSASignAndVerifyWithKey:@"enc_pkcs1_rsa.der" passphrase:@"test"];
 }
 
 - (void)test_PEM_PKCS8_Cipher

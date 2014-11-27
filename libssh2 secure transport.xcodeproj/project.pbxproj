@@ -269,7 +269,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd External/libssh2\n\nif [ ! -f .configure ]\nthen\n    ./buildconf\n    ./configure --without-openssl --with-securetransport\nfi\n\nmake";
+			shellScript = "cd External/libssh2\n\nif [ ! -f .configure ]\nthen\n    ./buildconf\n    ./configure --without-openssl --with-securetransport\n    touch .configure\nfi\n\nmake";
 		};
 /* End PBXShellScriptBuildPhase section */
 

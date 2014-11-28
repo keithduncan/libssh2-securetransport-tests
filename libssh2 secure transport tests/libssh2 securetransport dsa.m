@@ -83,11 +83,6 @@
 	[self _testDSASignAndVerifyWithKey:@"enc_pkcs1_dsa.pem" passphrase:@"test"];
 }
 
-- (void)test_DER_PKCS1_Cipher
-{
-	[self _testDSASignAndVerifyWithKey:@"enc_pkcs1_dsa.der" passphrase:@"test"];
-}
-
 - (void)test_PEM_PKCS8_Cipher
 {
 	[self _testDSASignAndVerifyWithKey:@"enc_pkcs8_dsa.pem" passphrase:@"test"];

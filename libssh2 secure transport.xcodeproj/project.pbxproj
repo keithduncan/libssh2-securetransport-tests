@@ -25,7 +25,6 @@
 		53EF2A301A08176E00BFD7D7 /* plain_pkcs1_dsa.pem in Resources */ = {isa = PBXBuildFile; fileRef = 53EF2A2F1A08176E00BFD7D7 /* plain_pkcs1_dsa.pem */; };
 		53EF2A321A08189A00BFD7D7 /* plain_pkcs1_dsa.der in Resources */ = {isa = PBXBuildFile; fileRef = 53EF2A311A08189A00BFD7D7 /* plain_pkcs1_dsa.der */; };
 		53EF2A361A081FCA00BFD7D7 /* plain_pkcs1_rsa.der in Resources */ = {isa = PBXBuildFile; fileRef = 53EF2A341A081FCA00BFD7D7 /* plain_pkcs1_rsa.der */; };
-		53EF2A391A08D62200BFD7D7 /* enc_pkcs1_dsa.der in Resources */ = {isa = PBXBuildFile; fileRef = 53EF2A371A08D62200BFD7D7 /* enc_pkcs1_dsa.der */; };
 		53EF2A3A1A08D62200BFD7D7 /* enc_pkcs1_dsa.pem in Resources */ = {isa = PBXBuildFile; fileRef = 53EF2A381A08D62200BFD7D7 /* enc_pkcs1_dsa.pem */; };
 		53F0B7DB193BCFE700D602B6 /* libssh2 securetransport dsa.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F0B7DA193BCFE700D602B6 /* libssh2 securetransport dsa.m */; };
 		53F0B814193CCCD200D602B6 /* libssh2test.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F0B813193CCCD200D602B6 /* libssh2test.m */; };
@@ -58,7 +57,6 @@
 		53EF2A2F1A08176E00BFD7D7 /* plain_pkcs1_dsa.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plain_pkcs1_dsa.pem; sourceTree = "<group>"; };
 		53EF2A311A08189A00BFD7D7 /* plain_pkcs1_dsa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = plain_pkcs1_dsa.der; sourceTree = "<group>"; };
 		53EF2A341A081FCA00BFD7D7 /* plain_pkcs1_rsa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = plain_pkcs1_rsa.der; sourceTree = "<group>"; };
-		53EF2A371A08D62200BFD7D7 /* enc_pkcs1_dsa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = enc_pkcs1_dsa.der; sourceTree = "<group>"; };
 		53EF2A381A08D62200BFD7D7 /* enc_pkcs1_dsa.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = enc_pkcs1_dsa.pem; sourceTree = "<group>"; };
 		53F0B7DA193BCFE700D602B6 /* libssh2 securetransport dsa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "libssh2 securetransport dsa.m"; sourceTree = "<group>"; };
 		53F0B813193CCCD200D602B6 /* libssh2test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libssh2test.m; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 				53EF2A2A1A0816C000BFD7D7 /* plain_pkcs8_dsa.pem */,
 				53EF2A291A0816C000BFD7D7 /* plain_pkcs8_dsa.p8 */,
 				53EF2A381A08D62200BFD7D7 /* enc_pkcs1_dsa.pem */,
-				53EF2A371A08D62200BFD7D7 /* enc_pkcs1_dsa.der */,
 				53EF2A281A0816C000BFD7D7 /* enc_pkcs8_dsa.pem */,
 				53EF2A271A0816C000BFD7D7 /* enc_pkcs8_dsa.p8 */,
 			);
@@ -239,7 +236,6 @@
 				53EF2A361A081FCA00BFD7D7 /* plain_pkcs1_rsa.der in Resources */,
 				5398C40C18BA5189001753CF /* enc_pkcs8_rsa.p8 in Resources */,
 				53EF2A2C1A0816C000BFD7D7 /* enc_pkcs8_dsa.pem in Resources */,
-				53EF2A391A08D62200BFD7D7 /* enc_pkcs1_dsa.der in Resources */,
 				5398C40F18BA5189001753CF /* plain_pkcs8_rsa.p8 in Resources */,
 				53EF2A301A08176E00BFD7D7 /* plain_pkcs1_dsa.pem in Resources */,
 				53EF2A3A1A08D62200BFD7D7 /* enc_pkcs1_dsa.pem in Resources */,

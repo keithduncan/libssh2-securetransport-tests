@@ -18,8 +18,15 @@
 {
 	NSURL *keyLocation = [[NSBundle bundleForClass:self.class] URLForResource:keyName withExtension:nil];
 
-	libssh2_rsa_ctx *rsa = NULL;
-	int rsaError = _libssh2_rsa_new_private(&rsa, NULL, keyLocation.fileSystemRepresentation, (unsigned char const *)passphrase.UTF8String);
+	int rsaError;
+	libssh2_rsa_ctx *rsa;
+
+	if (passphrase != nil) {
+		rsaError = _libssh2_rsa_new_private(&rsa, NULL, keyLocation.fileSystemRepresentation, NULL);
+		XCTAssertNotEqual(rsaError, 0, @"_libssh2_rsa_new_private should return non 0 for encrypted keys decoded without a passphrase");
+	}
+
+	rsaError = _libssh2_rsa_new_private(&rsa, NULL, keyLocation.fileSystemRepresentation, (unsigned char const *)passphrase.UTF8String);
 	XCTAssertEqual(rsaError, 0, @"_libssh2_rsa_new_private should return 0");
 	if (rsaError != 0) return;
 

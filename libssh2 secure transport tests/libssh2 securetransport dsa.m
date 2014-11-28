@@ -18,8 +18,15 @@
 {
 	NSURL *keyLocation = [[NSBundle bundleForClass:self.class] URLForResource:keyName withExtension:nil];
 
-	libssh2_dsa_ctx *key = NULL;
-	int dsaError = _libssh2_dsa_new_private(&key, NULL, keyLocation.fileSystemRepresentation, (unsigned char const *)passphrase.UTF8String);
+	int dsaError;
+	libssh2_dsa_ctx *key;
+
+	if (passphrase != nil) {
+		dsaError = _libssh2_dsa_new_private(&key, NULL, keyLocation.fileSystemRepresentation, NULL);
+		XCTAssertNotEqual(dsaError, 0, @"_libssh2_dsa_new_private should return non 0 for encrypted keys decoded without a passphrase");
+	}
+
+	dsaError = _libssh2_dsa_new_private(&key, NULL, keyLocation.fileSystemRepresentation, (unsigned char const *)passphrase.UTF8String);
 	XCTAssertEqual(dsaError, 0, @"_libssh2_dsa_new_private should return 0");
 	if (dsaError != 0) return;
 

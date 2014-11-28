@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D2E4C330-623E-48F7-B912-F14646D0D1BA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>libssh2 secure transport</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>037D4924178F4038BA53961EB556A7DC38E8C783</key>
+		<string>https://github.com/keithduncan/libssh2</string>
+		<key>CB9878715721E928F508A40F5922FF0029C7A29A</key>
+		<string>https://github.com/keithduncan/libssh2-secure-transport-tests.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>libssh2 secure transport.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>037D4924178F4038BA53961EB556A7DC38E8C783</key>
+		<string>../..External/libssh2</string>
+		<key>CB9878715721E928F508A40F5922FF0029C7A29A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/keithduncan/libssh2-secure-transport-tests.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CB9878715721E928F508A40F5922FF0029C7A29A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>037D4924178F4038BA53961EB556A7DC38E8C783</string>
+			<key>IDESourceControlWCCName</key>
+			<string>libssh2</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CB9878715721E928F508A40F5922FF0029C7A29A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>libssh2%20secure%20transport</string>
+		</dict>
+	</array>
+</dict>
+</plist>

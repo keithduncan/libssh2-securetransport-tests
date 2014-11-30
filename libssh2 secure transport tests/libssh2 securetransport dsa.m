@@ -56,6 +56,19 @@
 
 	dsaError = _libssh2_dsa_free(key);
 	XCTAssertEqual(dsaError, 0, @"_libssh2_dsa_free should return 0");
+
+	unsigned char *method;
+	size_t methodLength;
+	unsigned char *pubData;
+	size_t pubDataLength;
+	dsaError = _libssh2_pub_priv_keyfile(NULL, &method, &methodLength, &pubData, &pubDataLength, keyLocation.fileSystemRepresentation, passphrase.UTF8String);
+	XCTAssertEqual(dsaError, 0, @"_libssh2_pub_priv_keyfile should return 0");
+	if (dsaError != 0) return;
+
+	XCTAssertTrue(memcmp(method, "ssh-dss", methodLength) == 0);
+
+	free(method);
+	free(pubData);
 }
 
 - (void)test_PEM_PKCS1_Plain

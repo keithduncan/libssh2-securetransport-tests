@@ -57,9 +57,9 @@
 	rsaError = _libssh2_rsa_free(rsa);
 	XCTAssertEqual(rsaError, 0, @"_libssh2_rsa_free should return 0");
 
-	char const *method;
+	unsigned char *method;
 	size_t methodLength;
-	char const *pubData;
+	unsigned char *pubData;
 	size_t pubDataLength;
 	rsaError = _libssh2_pub_priv_keyfile(NULL, &method, &methodLength, &pubData, &pubDataLength, keyLocation.fileSystemRepresentation, passphrase.UTF8String);
 	XCTAssertEqual(rsaError, 0, @"_libssh2_pub_priv_keyfile should return 0");

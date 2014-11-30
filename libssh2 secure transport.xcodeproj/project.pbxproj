@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530F7F5E1A2B99CA002FAB5B /* libssh2 securetransport bignum.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F7F5D1A2B99CA002FAB5B /* libssh2 securetransport bignum.m */; };
 		5355ED8318C3ACE900AC2EED /* securetransport.c in Sources */ = {isa = PBXBuildFile; fileRef = 5355ED8218C3ACE900AC2EED /* securetransport.c */; };
 		5398C3F718BA5143001753CF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5398C3F618BA5143001753CF /* XCTest.framework */; };
 		5398C3FD18BA5143001753CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5398C3FB18BA5143001753CF /* InfoPlist.strings */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		530F7F5D1A2B99CA002FAB5B /* libssh2 securetransport bignum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "libssh2 securetransport bignum.m"; sourceTree = "<group>"; };
 		5355ED8218C3ACE900AC2EED /* securetransport.c */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.c; name = securetransport.c; path = External/libssh2/src/securetransport.c; sourceTree = SOURCE_ROOT; tabWidth = 2; usesTabs = 0; };
 		537E490A18A68E8400126CAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		537E491B18A6901100126CAD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -158,6 +160,7 @@
 				53F0B813193CCCD200D602B6 /* libssh2test.m */,
 				5398C41118BA51B3001753CF /* libssh2 securetransport rsa.m */,
 				53F0B7DA193BCFE700D602B6 /* libssh2 securetransport dsa.m */,
+				530F7F5D1A2B99CA002FAB5B /* libssh2 securetransport bignum.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				530F7F5E1A2B99CA002FAB5B /* libssh2 securetransport bignum.m in Sources */,
 				5355ED8318C3ACE900AC2EED /* securetransport.c in Sources */,
 				53F0B7DB193BCFE700D602B6 /* libssh2 securetransport dsa.m in Sources */,
 				5398C41218BA51B3001753CF /* libssh2 securetransport rsa.m in Sources */,

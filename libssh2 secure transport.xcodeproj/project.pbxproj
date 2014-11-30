@@ -23,6 +23,8 @@
 /* Begin PBXBuildFile section */
 		530F7F5E1A2B99CA002FAB5B /* libssh2 securetransport bignum.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F7F5D1A2B99CA002FAB5B /* libssh2 securetransport bignum.m */; };
 		530F7F6B1A2B9D2B002FAB5B /* ssh2.c in Sources */ = {isa = PBXBuildFile; fileRef = 530F7F5F1A2B9D07002FAB5B /* ssh2.c */; };
+		530F7F7B1A2BA30F002FAB5B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537E491B18A6901100126CAD /* Security.framework */; };
+		530F7F7C1A2BA311002FAB5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537E490A18A68E8400126CAD /* Foundation.framework */; };
 		5355ED8318C3ACE900AC2EED /* securetransport.c in Sources */ = {isa = PBXBuildFile; fileRef = 5355ED8218C3ACE900AC2EED /* securetransport.c */; };
 		5398C3F718BA5143001753CF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5398C3F618BA5143001753CF /* XCTest.framework */; };
 		5398C3FD18BA5143001753CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5398C3FB18BA5143001753CF /* InfoPlist.strings */; };
@@ -116,6 +118,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				530F7F7B1A2BA30F002FAB5B /* Security.framework in Frameworks */,
+				530F7F7C1A2BA311002FAB5B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +359,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"External/libssh2\"\n\nif [ ! -f .configure ]\nthen\n    ./buildconf\n    ./configure --enable-debug --without-openssl --without-libgcrypt --with-securetransport\n    touch .configure\nfi\n\nmake";
+			shellScript = "cd \"External/libssh2\"\n\nif [ ! -f .configure ]\nthen\n    ./buildconf\n    ./configure --enable-debug --without-openssl --without-libgcrypt --with-securetransport --disable-shared\n    touch .configure\nfi\n\nmake";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -428,7 +432,10 @@
 				LIBRARY_SEARCH_PATHS = External/libssh2/src/.libs;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "-lssh2";
+				OTHER_LDFLAGS = (
+					"-lssh2",
+					"-lz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -449,7 +456,10 @@
 				LIBRARY_SEARCH_PATHS = External/libssh2/src/.libs;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "-lssh2";
+				OTHER_LDFLAGS = (
+					"-lssh2",
+					"-lz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

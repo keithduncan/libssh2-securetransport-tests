@@ -292,7 +292,7 @@
 		537E48FF18A68E8400126CAD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Keith Duncan";
 				TargetAttributes = {
 					530F7F631A2B9D1D002FAB5B = {
@@ -586,6 +586,7 @@
 				530F7F6A1A2B9D1D002FAB5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		530F7F731A2B9F30002FAB5B /* Build configuration list for PBXAggregateTarget "libssh2" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +595,7 @@
 				530F7F751A2B9F30002FAB5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		537E490218A68E8400126CAD /* Build configuration list for PBXProject "libssh2 secure transport" */ = {
 			isa = XCConfigurationList;

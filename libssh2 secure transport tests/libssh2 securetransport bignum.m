@@ -52,4 +52,18 @@
 	_libssh2_bn_free(e);
 }
 
+- (void)testRandomNumber {
+	_libssh2_bn *x = _libssh2_bn_init();
+	_libssh2_bn_rand(x, 128, 128, 0);
+
+	CCStatus status;
+	char *string = CCBigNumToDecimalString(&status, x);
+	XCTAssertEqual(status, kCCSuccess);
+	XCTAssertTrue(strcmp(string, "0") != 0);
+
+	free(string);
+
+	_libssh2_bn_free(x);
+}
+
 @end

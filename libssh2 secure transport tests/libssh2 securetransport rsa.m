@@ -56,6 +56,19 @@
 
 	rsaError = _libssh2_rsa_free(rsa);
 	XCTAssertEqual(rsaError, 0, @"_libssh2_rsa_free should return 0");
+
+	char const *method;
+	size_t methodLength;
+	char const *pubData;
+	size_t pubDataLength;
+	rsaError = _libssh2_pub_priv_keyfile(NULL, &method, &methodLength, &pubData, &pubDataLength, keyLocation.fileSystemRepresentation, passphrase.UTF8String);
+	XCTAssertEqual(rsaError, 0, @"_libssh2_pub_priv_keyfile should return 0");
+	if (rsaError != 0) return;
+
+	XCTAssertTrue(memcmp(method, "ssh-rsa", methodLength) == 0);
+
+	free(method);
+	free(pubData);
 }
 
 #warning test that keys created using _libssh2_rsa_new can be used for sign verify

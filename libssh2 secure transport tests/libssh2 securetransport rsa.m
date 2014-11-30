@@ -83,6 +83,9 @@
 	[self _testRSASignAndVerifyWithKey:@"plain_pkcs1_rsa.der" passphrase:nil];
 }
 
+///
+// These are recognised as BSAFE format keys
+
 - (void)test_PEM_PKCS8_Plain
 {
 	[self _testRSASignAndVerifyWithKey:@"plain_pkcs8_rsa.pem" passphrase:nil];
@@ -92,6 +95,9 @@
 {
 	[self _testRSASignAndVerifyWithKey:@"plain_pkcs8_rsa.p8" passphrase:nil];
 }
+
+//
+///
 
 - (void)test_PEM_PKCS1_Cipher
 {

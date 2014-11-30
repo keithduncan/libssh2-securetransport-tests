@@ -66,4 +66,18 @@
 	_libssh2_bn_free(x);
 }
 
+- (void)testToData {
+	uint16_t value = 65280;
+
+	_libssh2_bn *x = _libssh2_bn_init();
+	_libssh2_bn_set_word(x, value);
+
+	uint16_t buffer;
+	_libssh2_bn_to_bin(x, &buffer);
+
+	_libssh2_bn_from_bin(x, 2, &buffer);
+
+	_libssh2_bn_free(x);
+}
+
 @end

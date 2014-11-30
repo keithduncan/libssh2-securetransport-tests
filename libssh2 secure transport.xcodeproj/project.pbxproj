@@ -6,8 +6,23 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		530F7F721A2B9F30002FAB5B /* libssh2 */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 530F7F731A2B9F30002FAB5B /* Build configuration list for PBXAggregateTarget "libssh2" */;
+			buildPhases = (
+				530F7F761A2B9F3A002FAB5B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = libssh2;
+			productName = libssh2;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		530F7F5E1A2B99CA002FAB5B /* libssh2 securetransport bignum.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F7F5D1A2B99CA002FAB5B /* libssh2 securetransport bignum.m */; };
+		530F7F6B1A2B9D2B002FAB5B /* ssh2.c in Sources */ = {isa = PBXBuildFile; fileRef = 530F7F5F1A2B9D07002FAB5B /* ssh2.c */; };
 		5355ED8318C3ACE900AC2EED /* securetransport.c in Sources */ = {isa = PBXBuildFile; fileRef = 5355ED8218C3ACE900AC2EED /* securetransport.c */; };
 		5398C3F718BA5143001753CF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5398C3F618BA5143001753CF /* XCTest.framework */; };
 		5398C3FD18BA5143001753CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5398C3FB18BA5143001753CF /* InfoPlist.strings */; };
@@ -31,8 +46,39 @@
 		53F0B814193CCCD200D602B6 /* libssh2test.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F0B813193CCCD200D602B6 /* libssh2test.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		530F7F771A2B9F52002FAB5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 537E48FF18A68E8400126CAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 530F7F721A2B9F30002FAB5B;
+			remoteInfo = libssh2;
+		};
+		530F7F791A2B9F58002FAB5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 537E48FF18A68E8400126CAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 530F7F721A2B9F30002FAB5B;
+			remoteInfo = libssh2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		530F7F621A2B9D1D002FAB5B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		530F7F5D1A2B99CA002FAB5B /* libssh2 securetransport bignum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "libssh2 securetransport bignum.m"; sourceTree = "<group>"; };
+		530F7F5F1A2B9D07002FAB5B /* ssh2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ssh2.c; path = External/libssh2/tests/ssh2.c; sourceTree = SOURCE_ROOT; };
+		530F7F641A2B9D1D002FAB5B /* ssh2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ssh2; sourceTree = BUILT_PRODUCTS_DIR; };
 		5355ED8218C3ACE900AC2EED /* securetransport.c */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.c; name = securetransport.c; path = External/libssh2/src/securetransport.c; sourceTree = SOURCE_ROOT; tabWidth = 2; usesTabs = 0; };
 		537E490A18A68E8400126CAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		537E491B18A6901100126CAD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -66,6 +112,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		530F7F611A2B9D1D002FAB5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5398C3F218BA5143001753CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,6 +131,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		530F7F651A2B9D1D002FAB5B /* ssh2 */ = {
+			isa = PBXGroup;
+			children = (
+				530F7F5F1A2B9D07002FAB5B /* ssh2.c */,
+			);
+			name = ssh2;
+			path = ../ssh2;
+			sourceTree = "<group>";
+		};
 		537E48FE18A68E8400126CAD = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				5398C3F518BA5143001753CF /* libssh2 secure transport tests.xctest */,
+				530F7F641A2B9D1D002FAB5B /* ssh2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +224,7 @@
 				5398C41118BA51B3001753CF /* libssh2 securetransport rsa.m */,
 				53F0B7DA193BCFE700D602B6 /* libssh2 securetransport dsa.m */,
 				530F7F5D1A2B99CA002FAB5B /* libssh2 securetransport bignum.m */,
+				530F7F651A2B9D1D002FAB5B /* ssh2 */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -182,11 +246,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		530F7F631A2B9D1D002FAB5B /* ssh2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 530F7F681A2B9D1D002FAB5B /* Build configuration list for PBXNativeTarget "ssh2" */;
+			buildPhases = (
+				530F7F601A2B9D1D002FAB5B /* Sources */,
+				530F7F611A2B9D1D002FAB5B /* Frameworks */,
+				530F7F621A2B9D1D002FAB5B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				530F7F7A1A2B9F58002FAB5B /* PBXTargetDependency */,
+			);
+			name = ssh2;
+			productName = ssh2;
+			productReference = 530F7F641A2B9D1D002FAB5B /* ssh2 */;
+			productType = "com.apple.product-type.tool";
+		};
 		5398C3F418BA5143001753CF /* libssh2 secure transport tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5398C40118BA5143001753CF /* Build configuration list for PBXNativeTarget "libssh2 secure transport tests" */;
 			buildPhases = (
-				5398C41518BA53A2001753CF /* Build libssh2 */,
 				5398C3F118BA5143001753CF /* Sources */,
 				5398C3F218BA5143001753CF /* Frameworks */,
 				5398C3F318BA5143001753CF /* Resources */,
@@ -194,6 +275,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				530F7F781A2B9F52002FAB5B /* PBXTargetDependency */,
 			);
 			name = "libssh2 secure transport tests";
 			productName = "libssh2 secure transport tests";
@@ -208,6 +290,14 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Keith Duncan";
+				TargetAttributes = {
+					530F7F631A2B9D1D002FAB5B = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					530F7F721A2B9F30002FAB5B = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
 			};
 			buildConfigurationList = 537E490218A68E8400126CAD /* Build configuration list for PBXProject "libssh2 secure transport" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -222,6 +312,8 @@
 			projectRoot = "";
 			targets = (
 				5398C3F418BA5143001753CF /* libssh2 secure transport tests */,
+				530F7F631A2B9D1D002FAB5B /* ssh2 */,
+				530F7F721A2B9F30002FAB5B /* libssh2 */,
 			);
 		};
 /* End PBXProject section */
@@ -252,23 +344,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5398C41518BA53A2001753CF /* Build libssh2 */ = {
+		530F7F761A2B9F3A002FAB5B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Build libssh2";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd External/libssh2\n\nif [ ! -f .configure ]\nthen\n    ./buildconf\n    ./configure --without-openssl --with-securetransport\n    touch .configure\nfi\n\nmake";
+			shellScript = "cd \"External/libssh2\"\n\nif [ ! -f .configure ]\nthen\n    ./buildconf\n    ./configure --enable-debug --without-openssl --without-libgcrypt --with-securetransport\n    touch .configure\nfi\n\nmake";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		530F7F601A2B9D1D002FAB5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530F7F6B1A2B9D2B002FAB5B /* ssh2.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5398C3F118BA5143001753CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,6 +383,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		530F7F781A2B9F52002FAB5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 530F7F721A2B9F30002FAB5B /* libssh2 */;
+			targetProxy = 530F7F771A2B9F52002FAB5B /* PBXContainerItemProxy */;
+		};
+		530F7F7A1A2B9F58002FAB5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 530F7F721A2B9F30002FAB5B /* libssh2 */;
+			targetProxy = 530F7F791A2B9F58002FAB5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		5398C3FB18BA5143001753CF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -295,6 +408,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		530F7F691A2B9D1D002FAB5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					External/libssh2/include,
+					External/libssh2/src,
+				);
+				LIBRARY_SEARCH_PATHS = External/libssh2/src/.libs;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-lssh2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		530F7F6A1A2B9D1D002FAB5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					External/libssh2/include,
+					External/libssh2/src,
+				);
+				LIBRARY_SEARCH_PATHS = External/libssh2/src/.libs;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-lssh2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		530F7F741A2B9F30002FAB5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		530F7F751A2B9F30002FAB5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		537E491318A68E8400126CAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -396,6 +569,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		530F7F681A2B9D1D002FAB5B /* Build configuration list for PBXNativeTarget "ssh2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				530F7F691A2B9D1D002FAB5B /* Debug */,
+				530F7F6A1A2B9D1D002FAB5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		530F7F731A2B9F30002FAB5B /* Build configuration list for PBXAggregateTarget "libssh2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				530F7F741A2B9F30002FAB5B /* Debug */,
+				530F7F751A2B9F30002FAB5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		537E490218A68E8400126CAD /* Build configuration list for PBXProject "libssh2 secure transport" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

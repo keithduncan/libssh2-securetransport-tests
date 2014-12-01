@@ -41,17 +41,20 @@
 	XCTAssertEqual(rsaError, 0, @"_libssh2_rsa_sha1_sign should return 0");
 	if (rsaError != 0) return;
 
-	rsaError = _libssh2_rsa_sha1_verify(rsa, signature, signatureLength, [sha1 bytes], [sha1 length]);
+	rsaError = _libssh2_rsa_sha1_verify(rsa, signature, signatureLength, [data bytes], [data length]);
 	XCTAssertEqual(rsaError, 0, @"_libssh2_rsa_sha1_verify should return 0 for a valid signature");
+
+	NSData *rogueData = [self randomData:1024];
+	rsaError = _libssh2_rsa_sha1_verify(rsa, signature, signatureLength, [rogueData bytes], [rogueData length]);
+	XCTAssertEqual(rsaError, 1, @"_libssh2_rsa_sha1_verify should return 1 for a valid signature of rogue data");
 
 	NSData *rogueSignature = nil;
 	while (rogueSignature == nil || [rogueSignature isEqualToData:[NSData dataWithBytesNoCopy:signature length:signatureLength freeWhenDone:NO]]) {
 		rogueSignature = [self randomData:signatureLength];
 	}
-	[rogueSignature getBytes:signature length:signatureLength];
-
-	rsaError = _libssh2_rsa_sha1_verify(rsa, signature, signatureLength, [sha1 bytes], [sha1 length]);
+	rsaError = _libssh2_rsa_sha1_verify(rsa, [rogueSignature bytes], [rogueSignature length], [data bytes], [data length]);
 	XCTAssertEqual(rsaError, 1, @"_libssh2_rsa_sha1_verify should return 1 for an invalid signature");
+
 	free(signature);
 
 	rsaError = _libssh2_rsa_free(rsa);

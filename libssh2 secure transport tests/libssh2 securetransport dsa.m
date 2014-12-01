@@ -41,16 +41,19 @@
 	XCTAssertEqual(dsaError, 0, @"_libssh2_dsa_sha1_sign should return 0");
 	if (dsaError != 0) return;
 
-	dsaError = _libssh2_dsa_sha1_verify(key, signature, [sha1 bytes], [sha1 length]);
+	dsaError = _libssh2_dsa_sha1_verify(key, signature, [data bytes], [data length]);
 	XCTAssertEqual(dsaError, 0, @"_libssh2_dsa_sha1_verify should return 0 for a valid signature");
+
+	NSData *rogueData = [self randomData:1024];
+	dsaError = _libssh2_dsa_sha1_verify(key, signature, [rogueData bytes], [rogueData length]);
+	XCTAssertEqual(dsaError, 1, @"_libssh2_dsa_sha1_verify should return 1 for a signature and rogue data");
 
 	NSData *rogueSignature = nil;
 	while (rogueSignature == nil || [rogueSignature isEqualToData:[NSData dataWithBytesNoCopy:signature length:signatureLength freeWhenDone:NO]]) {
 		rogueSignature = [self randomData:signatureLength];
 	}
 	[rogueSignature getBytes:signature length:signatureLength];
-
-	dsaError = _libssh2_dsa_sha1_verify(key, signature, [sha1 bytes], [sha1 length]);
+	dsaError = _libssh2_dsa_sha1_verify(key, signature, [data bytes], [data length]);
 	XCTAssertEqual(dsaError, 1, @"_libssh2_dsa_sha1_verify should return 1 for an invalid signature");
 	free(signature);
 
